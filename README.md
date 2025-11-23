@@ -1,16 +1,51 @@
-# React + Vite
+FloraVision – SoftDef Frontend Internship Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Demo :- "https://softdef-test-peach.vercel.app"
 
-Currently, two official plugins are available:
+Project Overview :-
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a pixel-perfect, responsive product listing page built for the SoftDef Frontend Internship Test. It replicates the provided Figma design using React, Tailwind CSS, and Vite. The layout includes reusable components, accessibility features, and a clean deployment on Vercel.
 
-## React Compiler
+Tech Stack :-
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Framework :- React + Vite
+- Styling :- Tailwind CSS
+- Deployment :- Vercel
+- Version Control :- Git + GitHub
 
-## Expanding the ESLint configuration
+Folder Structure :-
+src/
+assets/Images and icons
+components/Reusable UI components
+Footer.jsx 
+HeroSection.jsx
+Navbar.jsx
+OxygenPromoCard.jsx 
+ProductGride.jsx 
+ReviewSection.jsx
+TopSellingPlants.jsx
+data/Static product and review data 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+pages/Page-level layout 
+App.jsx :- Main app component 
+main.jsx :-Entry point
+
+Features :-
+
+Pixel-perfect Figma matching
+Responsive layout across devices
+Reusable components with props
+Accessible markup (alt tags, aria labels)
+Gradient borders with SVG masks
+Glassmorphism and backdrop blur effects
+Clean hover and focus states
+No AI-generated code
+
+Responsiveness :-
+
+Mobile-first design using Tailwind breakpoints
+Flex and grid layouts with shrink logic
+Cards never break into columns unless specified
+
+
+
