@@ -28,6 +28,7 @@ export default function ReviewSection() {
             Customer Review
           </h2>
         </div>
+
         <div className="flex flex-wrap justify-center gap-[33px] px-[45px]">
           {reviews.map((r, i) => (
             <div
@@ -93,7 +94,7 @@ export default function ReviewSection() {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="currentColor"
-                      className="w-6 h-6 text-yellow-500"
+                      className="w-6 h-6 text-[#fff84e]"
                     >
                       <path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.782 1.402 8.174L12 18.896l-7.336 3.871 1.402-8.174L.132 9.211l8.2-1.193z" />
                     </svg>
@@ -101,7 +102,7 @@ export default function ReviewSection() {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
-                    className="w-6 h-6 text-yellow-500"
+                    className="w-6 h-6 text-[#fff84e]"
                   >
                     <defs>
                       <linearGradient id={`half-${i}`}>
@@ -116,7 +117,7 @@ export default function ReviewSection() {
                   </svg>
                 </div>
               </div>
-              <p className="absolute top-[240px] left-[54px] right-[51px] font-['Inter'] font-normal text-[24px] text-gray-300 text-center z-40">
+              <p className="absolute top-[240px] left-[54px] right-[51px]  font-normal text-[24px] text-gray-300 text-center z-40 opacity-75">
                 "{r.text}"
               </p>
             </div>

@@ -13,9 +13,9 @@ export default function Navbar() {
           <img
             src={Logo}
             alt="FloraVision Logo"
-            className="w-10 h-10 object-contain"
+            className="w-10 h-10 object-contain opacity-75"
           />
-          <h1 className="text-[28px] font-black leading-[100%] tracking-[0em] text-white font-inter">
+          <h1 className="text-[28px] font-black leading-[100%] tracking-[0em] text-white font-inter opacity-75">
             FloraVision
           </h1>
         </div>

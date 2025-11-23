@@ -4,14 +4,14 @@ export default function Footer() {
   return (
     <footer className="bg-[#1b2316] text-white w-full">
       <div className="flex flex-row flex-wrap justify-between gap-10 px-[75px] pt-[260px]">
-        <div className="flex flex-col max-w-[500px]">
+        <div className="flex flex-col max-w-[650px]">
           <div className="flex items-center mb-5">
             <img
               src={logo}
               className="w-[94px] h-[94px] object-contain mr-3"
-              alt="FloraVision Logo"
+              alt="FloraVision Logo opacity-75"
             />
-            <h3 className="font-inter font-black text-[45px] leading-none tracking-normal">
+            <h3 className="font-inter font-black text-[45px] leading-none tracking-normal opacity-75">
               FloraVision
             </h3>
           </div>

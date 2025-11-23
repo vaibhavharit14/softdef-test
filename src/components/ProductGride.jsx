@@ -31,8 +31,42 @@ export default function ProductGrid() {
         {products.map((p, index) => (
           <div
             key={p.id}
-            className="relative w-[1619px] h-[526px] left-[54px] rounded-[150px] bg-[#FFFFFF0D] backdrop-blur-[15px] shadow-lg flex items-center p-12"
+            className="relative w-[1619px] h-[526px] left-[54px] rounded-[150px] flex items-center p-12"
           >
+            <svg
+              className="absolute inset-0 w-full h-full pointer-events-none z-20"
+              preserveAspectRatio="none"
+              viewBox="0 0 1619 526"
+            >
+              <defs>
+                <linearGradient
+                  id={`borderGradient-${p.id}`}
+                  x1="25%"
+                  y1="7%"
+                  x2="75%"
+                  y2="93%"
+                >
+                  <stop offset="6.85%" stopColor="#FFFFFF" stopOpacity="1" />
+                  <stop offset="50%" stopColor="rgba(255, 255, 255, 0.5)" />
+                  <stop offset="94.86%" stopColor="#000000" stopOpacity="0.8" />
+                </linearGradient>
+              </defs>
+              <rect
+                x="0.5"
+                y="0.5"
+                width="1618"
+                height="525"
+                rx="150"
+                ry="150"
+                fill="none"
+                stroke={`url(#borderGradient-${p.id})`}
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeOpacity="0.5" 
+              />
+            </svg>
+            <div className="absolute inset-0 bg-white/5 backdrop-blur-md z-0 rounded-[150px]" />
             <img
               src={p.image}
               alt={p.name}
@@ -42,7 +76,6 @@ export default function ProductGrid() {
                   : "top-[30%] right-[72px] -translate-y-[50%]"
               }`}
             />
-
             <div
               className={`relative z-10 text-white text-left max-w-[700px] ${
                 index % 2 === 0
@@ -66,7 +99,7 @@ export default function ProductGrid() {
                 >
                   Explore
                 </button>
-                <button className="w-[64px] h-[64px] border-[2px] border-white rounded-[12px] flex items-center justify-center hover:bg-white hover:text-black transition">
+                <button className="w-[64px] h-[64px] border-[2px] border-white rounded-[12px] flex items-center justify-center">
                   <img
                     src={bag}
                     alt="Add to bag"

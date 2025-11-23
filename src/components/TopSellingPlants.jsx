@@ -85,7 +85,7 @@ export default function TopSellingPlants() {
                   className="w-[459px] h-[459px] object-contain rounded-xl mx-auto"
                 />
               </div>
-<div className="flex flex-col w-full pl-[66px] pr-[74px] relative z-40">
+<div className="flex flex-col w-full pl-[66px] pr-[74px] relative z-40 opacity-75">
   <h3 className="text-[38px] font-normal mb-2">{p.name}</h3>
   <p className="text-[24px] font-normal mb-4 line-clamp-3">{p.description}</p>
   <div className="mt-auto h-[80px] flex items-center justify-between">
