@@ -2,8 +2,8 @@ import Logo from "../assets/image/logo.png";
 import bag from "../assets/image/bag.png";
 import search from "../assets/image/search.png";
 import Polygonone from "../assets/image/Polygonone.png";
-import lineone from "../assets/image/lineone.png";
-import linetwo from "../assets/image/linetwo.png";
+import lineone from "../assets/image/Lineone.png";
+import linetwo from "../assets/image/Linetwo.png";
 
 export default function Navbar() {
   return (
